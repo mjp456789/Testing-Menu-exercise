@@ -1,0 +1,129 @@
+
+.logme-info{
+  margin: 5px 25px;
+  float: left;
+}
+.logme-info b{
+	color: #8D49A9;
+	font-size: 18px;
+}
+
+.logme-info label{
+	color: #8D49A9;
+	padding: 0px;
+	margin:0px;
+}
+.logme-container{
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  position: relative;
+}
+.library-container{
+  display:inline-block;
+  overflow: auto;
+  min-height: 150px;
+}
+.logme-image{
+  height: 100px;
+    width: 100px;
+    margin-left: 25px;
+    top: 10px;
+    display: block;
+    position: relative;
+}
+.logme-image img{
+  height: 100px;
+  width: 100px;
+  margin-left:-50px;
+  left:50%;
+  display: block;
+  position: absolute;
+}
+.logme-username{
+  display: block;
+  word-wrap: break-word;
+  overflow: hidden;
+  padding: 15px 10px;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.logme-icon{
+  color:#fff;
+  border-radius: 25px;
+  border: 2px solid #898989;
+  background: #898989;
+  background: -webkit-radial-gradient(#ededed 45%, #898989 100%);
+  background: -o-radial-gradient(#ededed 45%, #898989 100%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#ededed 45%, #898989 100%); /* For Firefox 3.6-15 */
+  background: radial-gradient(#ededed 20%, #898989 80%); /* Standard syntax */
+}
+
+.modal-content{
+  border-radius: 25px;
+  border: none;
+}
+
+.modal-header{
+  padding: 8px 0px 2px 25px;
+  border-bottom: 1px solid #e5e5e5;
+  color: white;
+  background-color: #8D49A9;
+  border-radius: 25px 25px 0 0;
+}
+
+.logme-btn{
+  color:#fff;
+  min-width: 100px;
+  border-radius: 25px;
+  color: #040404;
+  font-weight: bold;
+  min-width: 180px;
+  margin-left: 5px;
+}
+.status-label{
+  float:left;
+}
+.status-button{
+  min-width: 270px;
+min-height: 100px;
+margin-left: 12px;
+font-size:25px;
+}
+.logme-optionin{
+  border-radius: 25px;
+  border: 2px solid #890000;
+  background: #890000;
+  background: -webkit-radial-gradient(#ed0000 45%, #890000 100%);
+ background: -o-radial-gradient(#ed0000 45%, #890000 100%); /* For Opera 11.6-12.0 */
+ background: -moz-radial-gradient(#ed0000 45%, #890000 100%); /* For Firefox 3.6-15 */
+ background: radial-gradient(#ed0000 20%, #890000 80%); /* Standard syntax */
+}
+.logme-optionout{
+  border-radius: 25px;
+  border: 2px solid #008900;
+  background: #008900;
+  background: -webkit-radial-gradient(#00ed00 45%, #008900 100%);
+  background: -o-radial-gradient(#00ed00 45%, #008900 100%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#00ed00 45%, #008900 100%); /* For Firefox 3.6-15 */
+  background: radial-gradient(#00ed00 20%, #008900 80%); /* Standard syntax */
+}
+
+
+
+
+.search-container{
+  float: right;
+  margin: 10px 0 0 0;
+}
+.user-search{
+  margin: 0px 20px 20px 0px;
+  width: 300px;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
