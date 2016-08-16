@@ -2,6 +2,7 @@
 <?php
   $assetsURL = $this->module->getAssetsUrl();
   $moduleURL = Yii::app()->request->baseUrl.'/protected/modules/exercise';
+  var_dump($statsObject)
 ?>
 
 <!doctype html>
