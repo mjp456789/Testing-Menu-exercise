@@ -1,0 +1,7 @@
+<div class="exercise-container" data-ng-repeat="statRow in selectedStats | filter:userFilter | orderBy: 'date':true">
+  <div class="exercise-icon" ng-click="open(statRow)">
+    <div class="exercise-name">{{statRow.name}}</div>
+    <div class="exercise-name">{{statRow.url}}</div>
+    
+  </div>
+</div>

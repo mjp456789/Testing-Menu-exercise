@@ -10,7 +10,6 @@ body
 	font: normal 10pt Arial,Helvetica,sans-serif;
 	background: #EFEFEF;
 	min-height: 100%;
-  overflow: hidden;
 }
 
 #page
@@ -53,7 +52,8 @@ body
 
 #mainmenu
 {
-	background:#8D49A9 repeat-x left top;
+  color:#fff;
+	background:#7b9dea repeat-x left top;
 	border-radius: 0 0 10px 10px;
 }
 
@@ -66,23 +66,12 @@ body
 #mainmenu ul li
 {
 	display: inline;
-}
-
-#mainmenu ul li a
-{
-	color:#ffffff;
-	background-color:transparent;
+  margin: 5px;
+  cursor: pointer;
 	font-size:12px;
 	font-weight:bold;
 	text-decoration:none;
 	padding:5px 8px;
-}
-
-#mainmenu ul li a:hover, #mainmenu ul li.active a
-{
-	color: #6399cd;
-	background-color:#EFF4FA;
-	text-decoration:none;
 }
 
 div.flash-error, div.flash-notice, div.flash-success

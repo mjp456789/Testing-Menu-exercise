@@ -1,10 +1,10 @@
 (function(){
-  angular.module('logmeApp',['ngRoute','ui.bootstrap'])
+  angular.module('exerciseApp',['ngRoute','ui.bootstrap'])
   .config(function($routeProvider){
     $routeProvider
     .when('/',{
-      controller:'logmeController',
-      templateUrl:GLOBAL['assetsUrl']+'/angular/views/logmeTemplate.html'
+      controller:'exerciseController',
+      templateUrl:GLOBAL['assetsUrl']+'/angular/views/exerciseTemplate.html'
     })
     .otherwise({redirectTo:'/'});
 

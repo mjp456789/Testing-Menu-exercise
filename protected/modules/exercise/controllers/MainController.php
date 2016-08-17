@@ -5,20 +5,19 @@ class mainController extends Controller
 
 	public function actionIndex()
 	{
-		$statToShow = ['branches'=>'branches_url',
+		$statToShow = array('branches'=>'branches_url',
 												'contribuitors' => 'contributors_url',
-												'commits' => 'commits_url',
-												'issues' => 'issues_url'];
+												'commits' => 'commits_url'
+											);
 		$statsObject = array();
-		$repoStats = json_decode($this->actionGetRepoStats('https://api.github.com/repos/composer/composer'));
-
+	/*	$repoStats = json_decode($this->actionGetRepoStats('https://api.github.com/repos/composer/composer'));
 		foreach ($statToShow as $label => $statsURL) {
 			if(isset($repoStats->$statsURL)){
 				$urlSplit = explode('{',$repoStats->$statsURL);
 				$statsObject[$label] = $this->actionGetRepoStats($urlSplit[0]);
 			}
 		}
-
+*/
 
 		$this->render('index', array('statsObject' => $statsObject));
 	}

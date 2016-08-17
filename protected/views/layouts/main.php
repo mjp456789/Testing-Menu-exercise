@@ -27,35 +27,10 @@
 </head>
 
 <body>
-<?php /* $this->beginContent('//layouts/customerComplain'); ?>
-<div id="chat"><?php echo $content; ?></div>
-<?php $this->endContent(); */?>
+
 <div class="container" id="page">
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Menu1', 'url'=>array('/exercise')),
-				array('label'=>'Menu2')
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-
-
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
 	<?php echo $content; ?>
-
-	<div class="clear"></div>
-
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Paulo.<br/>
-		Version 2.00a<br/>
-	</div><!-- footer -->
 
 </div><!-- page -->
 
