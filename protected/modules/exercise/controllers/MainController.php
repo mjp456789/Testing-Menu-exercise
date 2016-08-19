@@ -5,19 +5,27 @@ class mainController extends Controller
 
 	public function actionIndex()
 	{
-		$statToShow = array('branches'=>'branches_url',
-												'contribuitors' => 'contributors_url',
-												'commits' => 'commits_url'
-											);
+		$statToShow = array('branches'=>array(
+								'name' => 'branches_url', 
+								'templateFunction' => 'getBranchStructure',
+								'label' => 'Branches'),
+							'contribuitors' => array(
+								'name' => 'contributors_url', 
+								'templateFunction' => 'getContributorsStructure',
+								'label' => 'Top 10 Contributors'),
+							'commits' => array(
+								'name' => 'commits_url', 
+								'templateFunction' => 'getCommitStructure',
+								'label' => 'Last Commits')
+							);
 		$statsObject = array();
-	/*	$repoStats = json_decode($this->actionGetRepoStats('https://api.github.com/repos/composer/composer'));
+		$repoStats = json_decode($this->actionGetRepoStats('https://api.github.com/repos/composer/composer'));
 		foreach ($statToShow as $label => $statsURL) {
-			if(isset($repoStats->$statsURL)){
-				$urlSplit = explode('{',$repoStats->$statsURL);
-				$statsObject[$label] = $this->actionGetRepoStats($urlSplit[0]);
+			if(isset($repoStats->$statsURL['name'])){
+				$urlSplit = explode('{',$repoStats->$statsURL['name']);
+				$statsObject[$label] = StatsStructureHelper::$statsURL['templateFunction']($this->actionGetRepoStats($urlSplit[0]));
 			}
 		}
-*/
 
 		$this->render('index', array('statsObject' => $statsObject));
 	}

@@ -1,30 +1,12 @@
 
 (function(){
-  ModalInstanceCtrl.$inject = ['$scope','$uibModalInstance','userLogin'];
-function ModalInstanceCtrl($scope,$uibModalInstance,userLogin){
+  ModalInstanceCtrl.$inject = ['$scope','$sce','$uibModalInstance','showStats'];
+function ModalInstanceCtrl($scope,$sce,$uibModalInstance,showStats){
 
-  $scope.userLogin = userLogin;
-  $scope.waiting = true;
-  $scope.status_message = "Status message...";
-  $scope.toio = '';
-  $scope.getStatus = function () {
-    $scope.waiting = true;
-    $scope.logged= true;
-    $scope.notlogged= true;
-    if(angular.isUndefined($scope.userLogin) || $scope.userLogin==null){
-      $scope.status_message = "Login is invalid...";
-      return;
-    }
-      $scope.status_message = "Getting status...";
-  };
-  $scope.getStatus();
-
-  $scope.selectOption = function (option) {
-    $scope.waiting = true;
-  };
+  $scope.statsContent = $sce.trustAsHtml(showStats);
 
   $scope.cancel = function () {
-    $uibModalInstance.dismiss($scope.toio);
+    $uibModalInstance.dismiss();
   };
 }
 angular.module('exerciseApp').controller('ModalInstanceCtrl',ModalInstanceCtrl);
