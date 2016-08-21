@@ -28,7 +28,7 @@
         <script src="<?php echo Yii::app()->request->baseUrl?>/js/angular/angular-ui.js"></script>
 
         <script src="<?php echo $assetsURL?>/angular/app.js"></script>
-        <script src="<?php echo $assetsURL?>/angular/controllers/exerciseController.js"></script>
+        <script src="<?php echo $assetsURL?>/angular/controllers/ExerciseController.js"></script>
         <script src="<?php echo $assetsURL?>/angular/controllers/ModalController.js"></script>
 
     </body>
